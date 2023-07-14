@@ -1,0 +1,599 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ExtraSofts — download the software completely free of charge!</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+</head>
+<body>
+<div class="modal">
+    <div class="content__slide4__item">
+        <div class="modal__close">
+            <button onclick="closeModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-rounded-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M10 10l4 4m0 -4l-4 4"></path>
+                    <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" id="modal-image" src="index.html">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text" id="modal-category"></span>
+                <span class="item__block1__text-block__text"><span id="modal-downloads"></span> downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1" id="modal-name"></span>
+            <span class="item__block2__text2" id="modal-description"></span>
+        </div>
+
+        <div id="passwordBlock">
+            <span class="item__block2__text1 center">Password to the archive</span>
+
+            <div class="modal-numbers" id="modal-password">
+
+            </div>
+        </div>
+        <a href="index.html" id="modal-link" target="_blank" class="item__block3">
+            Get started download        </a>
+    </div>
+</div>
+<div class="content">
+    <div class="content__topbar" id="topbar">
+        <div class="content__topbar__logo">
+            <img class="content__topbar__logo__img" src="imgs/topbar-logo.svg">
+            <span class="content__topbar__logo__text">ExtraSofts</span>
+        </div>
+        <div class="content__topbar__navbar">
+            <a href="index.html#about" class="navbar__block">About</a>
+            <a href="index.html#catalog" class="navbar__block">Catalog</a>
+            <a href="index.html#guide" class="navbar__block">Guide</a>
+            <a href="index.html#promo" class="navbar__block">Promo</a>
+        </div>
+        <div class="content__topbar__right-block">
+            <div class="content__topbar__right-block__language">
+                <a href="en.html" class="right-block__language__text">EN</a>
+                <span class="right-block__language__text language__text-slash">/</span>
+                <a href="es.html" class="right-block__language__text">ES</a>
+                <span class="right-block__language__text language__text-slash">/</span>
+                <a href="pt.html" class="right-block__language__text">PT</a>
+            </div>
+            <button class="content__topbar__right-block__btn" onclick="document.getElementById('catalog').scrollIntoView({block: 'start', behavior: 'smooth'});">
+                Go to catalog            </button>
+        </div>
+        <div class="content__topbar__menu">
+            <div class="content__topbar__menu__btn">
+                <div class="content__topbar__menu__btn__line"></div>
+                <div class="content__topbar__menu__btn__line"></div>
+                <div class="content__topbar__menu__btn__line"></div>
+            </div>
+            <div class="content__topbar__menu__dropdown">
+                <a href="index.html#about" class="navbar__block">About</a>
+                <a href="index.html#catalog" class="navbar__block">Catalog</a>
+                <a href="index.html#guide" class="navbar__block">Guide</a>
+                <a href="index.html#promo" class="navbar__block">Promo</a>
+            </div>
+        </div>
+    </div>
+    <div class="content__slide1" id="about">
+        <div class="content__slide1__main">
+            <span class="content__slide1__main__text1">
+                Save your money<br />and time at this place            </span>
+            <span class="content__slide1__main__text2">
+                Download your favorite                <span class="content__slide1__main__text-highlighted">programs</span>
+                for free without<span class="content__slide1__main__text-highlighted">
+                    restrictions                </span>
+                on our website            </span>
+            <div class="content__slide1__main__btns-block">
+                <a class="main__btns-block__btn1" href="index.html#catalog">Get started</a>
+                <a class="main__btns-block__btn2" href="index.html#guide">View guide</a>
+            </div>
+            <div class="content__slide1__main__peoples-block">
+                <img src="imgs/peoples.png" class="content__slide1__main__peoples-block__img">
+                <span class="main__peoples-block__text">
+                    Over 100K happy users                </span>
+            </div>
+        </div>
+        <img src="imgs/slide1-illu.png" class="content__slide1__illu">
+    </div>
+</div>
+<div class="content__line"></div>
+<div class="content">
+    <div class="content__desc-blocks">
+        <div class="content__desc-blocks__block">
+            <img class="content__desc-blocks__block__img" src="imgs/desc-icon1.png">
+            <div class="content__desc-blocks__block__text-block">
+                <span class="content__desc-blocks__block__text-block__text1">
+                    Incredibly fast                </span>
+                <span class="content__desc-blocks__block__text-block__text2">
+                    Download your favorite programs without any speed limits                </span>
+            </div>
+        </div>
+        <div class="content__desc-blocks__block">
+            <img class="content__desc-blocks__block__img" src="imgs/desc-icon2.png">
+            <div class="content__desc-blocks__block__text-block">
+                <span class="content__desc-blocks__block__text-block__text1">
+                    Really easy                </span>
+                <span class="content__desc-blocks__block__text-block__text2">
+                    Download your favorite programs in a few clicks and enjoy                </span>
+            </div>
+        </div>
+        <div class="content__desc-blocks__block">
+            <img class="content__desc-blocks__block__img" src="imgs/desc-icon3.png">
+            <div class="content__desc-blocks__block__text-block">
+                <span class="content__desc-blocks__block__text-block__text1">
+                    Universal                </span>
+                <span class="content__desc-blocks__block__text-block__text2">
+                    Our catalog contains the most popular and widespread programs                </span>
+            </div>
+        </div>
+    </div>
+    <div class="content__software-blocks" id="promo">
+        <div class="content__software-blocks__block1">
+            <div class="software-blocks__block1__block-left">
+                <span class="software-blocks__block1__block-left__text1">
+                    The best software for you is absolutely free                </span>
+                <span class="software-blocks__block1__block-left__text2">
+                    Our catalog contains the most popular and widespread programs that you can download for free.                </span>
+                <img class="software-blocks__block1__block-left__img" src="imgs/soft-icons.png">
+            </div>
+            <div class="software-blocks__block1__block-right">
+                <span class="software-blocks__block1__block-right__text1">
+                    We are trusted by many users                </span>
+                <span class="software-blocks__block1__block-right__text2">
+                    We have an excellent reputation among free software providers. We are chosen and trusted.                </span>
+                <div class="software-blocks__block1__block-right__img-text">
+                    <img class="block-right__img-text__img" src="imgs/peoples2.png">
+                    <span class="block-right__img-text__text">
+                        Over 100K happy users                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="content__software-blocks__block2">
+            <img class="software-blocks__block2__illu" src="imgs/block2-illu.png">
+            <div class="software-blocks__block2__text-block">
+                <span class="software-blocks__block2__text-block__text1">
+                    Choose and download programs now!                </span>
+                <span class="software-blocks__block2__text-block__text2">
+                    In our extensive catalog you can find any program to your liking.                </span>
+                <button class="software-blocks__block2__text-block__btn" onclick="document.getElementById('catalog').scrollIntoView({block: 'start', behavior: 'smooth'});">
+                    Go to catalog                </button>
+            </div>
+        </div>
+    </div>
+    <div class="content__slide3" id="catalog">
+        <div class="content__slide3__text-block">
+            <span class="content__slide3__text-block__text1">
+                Catalog programs            </span>
+            <span class="content__slide3__text-block__text2">
+                Select the desired programs from the catalog and enjoy them!            </span>
+        </div>
+        <img src="imgs/slide3-bg.png" class="content__slide3__illu" width="300">
+    </div>
+    <div class="content__slide4" id="softwares"><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/2759b74be5ac5e6ae869e9a4c7f40888.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Adobe Softwares</span>
+                <span class="item__block1__text-block__text">220K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Adobe Photoshop</span>
+            <span class="item__block2__text2">Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS. It was originally created...</span>
+        </div>
+        <button onclick="showModal(33)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/482031a3f8086608041e5a0e99f87297.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Video Editors</span>
+                <span class="item__block1__text-block__text">111K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Wondershare Filmora</span>
+            <span class="item__block2__text2">Wondershare Filmora is a cross-platform for making videos anywhere for all creators! You can easily make impressive and captivatin...</span>
+        </div>
+        <button onclick="showModal(35)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/b334a0ff015b7a41f2641fdf46a75a26.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Other</span>
+                <span class="item__block1__text-block__text">10K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Canva Pro</span>
+            <span class="item__block2__text2">Canva is a graphic design platform that allows users to create social media graphics, presentations, posters, documents and other ...</span>
+        </div>
+        <button onclick="showModal(45)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/13232b7e12d6a0fbb1fdd8669d52d3f5.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Adobe Softwares</span>
+                <span class="item__block1__text-block__text">62K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Adobe Premiere</span>
+            <span class="item__block2__text2">Adobe Premiere Pro is a timeline-based and non-linear video editing software application (NLE) developed by Adobe Inc. and publish...</span>
+        </div>
+        <button onclick="showModal(36)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/60e7adbfd151669d7ff2e15c901e12b5.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Adobe Softwares</span>
+                <span class="item__block1__text-block__text">84K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Adobe Illustrator</span>
+            <span class="item__block2__text2">Adobe Illustrator is a vector graphics editor and design program developed and marketed by Adobe Inc. Originally designed for the ...</span>
+        </div>
+        <button onclick="showModal(37)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/aa6d5c9df359592bca35918efcae637e.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Adobe Softwares</span>
+                <span class="item__block1__text-block__text">10.7K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Adobe After Effects</span>
+            <span class="item__block2__text2">In this introductory overview, learn about After Effects, the industry-standard tool for video compositing, motion graphics design...</span>
+        </div>
+        <button onclick="showModal(30)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/ffaf3e3a9b18c97c0a31dd36a40ce270.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Adobe Softwares</span>
+                <span class="item__block1__text-block__text">96K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Adobe Lightroom</span>
+            <span class="item__block2__text2">Adobe Lightroom (officially Adobe Photoshop Lightroom) is a piece of image organization and image processing software developed by...</span>
+        </div>
+        <button onclick="showModal(41)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/aef9c6f98ff0ea0a1651ea56ca962af9.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Office</span>
+                <span class="item__block1__text-block__text">65K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Microsoft Office</span>
+            <span class="item__block2__text2">Microsoft Office, or simply Office, is a discontinued family of client software, server software, and services developed by Micros...</span>
+        </div>
+        <button onclick="showModal(44)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/fdbb81a0493d068389760e1144eea82a.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Other</span>
+                <span class="item__block1__text-block__text">18K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Autodesk AutoCAD</span>
+            <span class="item__block2__text2">AutoCAD computer-aided design (CAD) software enables professionals to create precise 2D and 3D drawings....</span>
+        </div>
+        <button onclick="showModal(43)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/7e2783f933f5f69540f56550a22f0d39.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Other</span>
+                <span class="item__block1__text-block__text">71K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">FL Studio</span>
+            <span class="item__block2__text2">FL Studio (previously known as FruityLoops before 2003) is a digital audio workstation (DAW) developed by the Belgian company Imag...</span>
+        </div>
+        <button onclick="showModal(38)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/4460ec5d01f6c838ab86a74f52c80ad9.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Video Editors</span>
+                <span class="item__block1__text-block__text">37K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Vegas Pro 20</span>
+            <span class="item__block2__text2">Vegas Pro is a video editing software package for non-linear editing (NLE). The first release of Vegas Beta was on June 11, 1999. ...</span>
+        </div>
+        <button onclick="showModal(42)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/3b22c7d680842e9f75279dc80059c713.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Adobe Softwares</span>
+                <span class="item__block1__text-block__text">19K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Adobe Animate</span>
+            <span class="item__block2__text2">Adobe Animate (formerly Adobe Flash Professional, Macromedia Flash, and FutureSplash Animator) is a multimedia authoring and compu...</span>
+        </div>
+        <button onclick="showModal(40)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/bfe34a96d94d1c7e332cd83259b3696a.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Adobe Softwares</span>
+                <span class="item__block1__text-block__text">36K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Adobe Audition 2023</span>
+            <span class="item__block2__text2">Adobe Audition is a digital audio workstation developed by Adobe Inc. featuring both a multitrack, non-destructive mix/edit enviro...</span>
+        </div>
+        <button onclick="showModal(39)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/96d2f061490f52a247979c264dc41073.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Video Editors</span>
+                <span class="item__block1__text-block__text">11.6K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Movavi Video Editor</span>
+            <span class="item__block2__text2">That's why we created Movavi Video Editor – for you to edit videos with 100% safety. It's easy, powerful, and totally secure. What...</span>
+        </div>
+        <button onclick="showModal(31)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/bd0a7e3dbbb15982b00ff3489990b9ba.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Adobe Softwares</span>
+                <span class="item__block1__text-block__text">19.4K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Adobe Acrobat</span>
+            <span class="item__block2__text2">Adobe Acrobat is a family of application software and Web services developed by Adobe Inc. to view, create, manipulate, print and ...</span>
+        </div>
+        <button onclick="showModal(29)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/20bda7bf7f7db205d3a44b7d0c2f96b3.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">IObit Softwares</span>
+                <span class="item__block1__text-block__text">30K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Driver Booster PRO</span>
+            <span class="item__block2__text2">Driver Booster PRO is the NO.1 driver updater. With huge driver database, it gives you less system crashes, better game experience...</span>
+        </div>
+        <button onclick="showModal(32)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/352eca854428c8392dfab5368fa8624a.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Office</span>
+                <span class="item__block1__text-block__text">24K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Davinci Resolve 18</span>
+            <span class="item__block2__text2">davinci resolve is a color grading, color correction, visual effects, and audio post-production video editing application for maco...</span>
+        </div>
+        <button onclick="showModal(47)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/0ccf2d7a4e442973eba3be60c65fa6c2.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Adobe Softwares</span>
+                <span class="item__block1__text-block__text">19K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Adobe Indesign</span>
+            <span class="item__block2__text2">nDesign is the next advanced layout program after PageMaker. Adobe InDesign allows you to create documents for their output both o...</span>
+        </div>
+        <button onclick="showModal(48)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/7057717ff4125eac46142805e86bcff2.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Other</span>
+                <span class="item__block1__text-block__text">17.5K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Ableton Live</span>
+            <span class="item__block2__text2">A computer program from the German company Ableton for musicians, used both for studio work and for live playing....</span>
+        </div>
+        <button onclick="showModal(49)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/ff7669520083eeca8967899634721e96.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Other</span>
+                <span class="item__block1__text-block__text">21.8K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">IDM 6.41</span>
+            <span class="item__block2__text2">Install Internet Download Manager (IDM) to stop waiting for your downloads. You will be truly amazed how fast IDM downloads your f...</span>
+        </div>
+        <button onclick="showModal(50)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/58a16cd7c5d27630f0e7948f5798fddb.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Other</span>
+                <span class="item__block1__text-block__text">13.1K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">CorelDRAW</span>
+            <span class="item__block2__text2">CorelDRAW is your fully loaded professional design toolkit for delivering breathtaking vector illustration, layout, photo editing,...</span>
+        </div>
+        <button onclick="showModal(51)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/957e8cf9696cc259485574688b0c3a5a.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Other</span>
+                <span class="item__block1__text-block__text">86.4K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">Spotify Premium</span>
+            <span class="item__block2__text2">Spotify is a streaming service that allows you to legally listen to music tracks, audiobooks and podcasts without downloading them...</span>
+        </div>
+        <button onclick="showModal(52)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/55f144010b56d77dcf4350c22d41d7bd.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Other</span>
+                <span class="item__block1__text-block__text">7220 downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">FX Sapphire Plugins</span>
+            <span class="item__block2__text2">Boris FX Sapphire for After Effects is a wide collection of add-ons that are provided for installation in other programs. We are t...</span>
+        </div>
+        <button onclick="showModal(53)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div><div class="content__slide4__item">
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" src="static/59efa4ec03557afeee2a84b569f0bb58.webp">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text">Other</span>
+                <span class="item__block1__text-block__text">88.9K downloads</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1">CCleaner Pro</span>
+            <span class="item__block2__text2">CCleaner developed by Piriform Software, is a utility used to clean potentially unwanted files and invalid Windows Registry entrie...</span>
+        </div>
+        <button onclick="showModal(54)" class="item__block3">
+            <span class="item__block3__text1">Free for download</span>
+        </button>
+    </div></div>
+    <div class="content__slide5" id="guide">
+        <span class="content__slide5__text1">
+            It's easier than it looks!        </span>
+        <span class="content__slide5__text2">
+                    </span>
+        <div class="content__slide5__main">
+            <div class="content__slide5__main__blocks">
+                <div class="content__slide5__main__blocks__block">
+                    <span class="main__blocks__block__text1">№1</span>
+                    <span class="main__blocks__block__text2">
+                        Select the desired program<br/> from the catalog                    </span>
+                    <span class="main__blocks__block__text3">
+                        Take surveys anytime,<br/>anywhere, on any device.                    </span>
+                </div>
+                <div class="content__slide5__main__blocks__block">
+                    <span class="main__blocks__block__text1">№2</span>
+                    <span class="main__blocks__block__text2">
+                        Enter the password<br/>to the archive                    </span>
+                    <span class="main__blocks__block__text3">
+                        Download the archive and<br/>enter the password, then unzip it.                    </span>
+                </div>
+                <div class="content__slide5__main__blocks__block">
+                    <span class="main__blocks__block__text1">№3</span>
+                    <span class="main__blocks__block__text2">
+                        Install the program                    </span>
+                    <span class="main__blocks__block__text3">
+                        Run the installer of<br/>the downloaded program and wait                    </span>
+                </div>
+            </div>
+            <img class="content__slide5__main__illu" src="imgs/slide5-illu.png">
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <span class="footer__text1">Use paid programs for free now!</span>
+    <span class="footer__text2">It no longer makes sense for you to pay a lot of money to subscribe<br/>to paid programs, because they can be downloaded completely free!</span>
+    <span class="footer__text3">Download for all history</span>
+    <span class="footer__text4">4.000.000+</span>
+    <div class="content__topbar footer-topbar">
+        <div class="content__topbar__logo">
+            <img class="content__topbar__logo__img" src="imgs/topbar-logo.svg">
+            <span class="content__topbar__logo__text">ExtraSofts</span>
+        </div>
+        <div class="content__topbar__navbar">
+            <a href="index.html#about" class="navbar__block">About</a>
+            <a href="index.html#catalog" class="navbar__block">Catalog</a>
+            <a href="index.html#guide" class="navbar__block">Guide</a>
+            <a href="index.html#promo" class="navbar__block">Promo</a>
+        </div>
+        <div class="content__topbar__right-block">
+            <span class="right-block__language__text"><a href="https://t.me/MadelineAgency" target="_blank"><img src="imgs/MADELINE.svg%3F1"></a></span>
+        </div>
+    </div>
+</div>
+<script src="core.min.js" defer=""></script>
+<script src="assets/js/navbar.min.js" async=""></script>
+</body>
+</html>
+

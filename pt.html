@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ExtraSofts — descarregue o software de forma totalmente gratuita!</title>
+    <link rel="stylesheet" href="style.css%3F1.css">
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+</head>
+<body>
+<div class="modal">
+    <div class="content__slide4__item">
+        <div class="modal__close">
+            <button onclick="closeModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-rounded-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M10 10l4 4m0 -4l-4 4"></path>
+                    <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="item__block1">
+            <img class="item__block1__img" width="64" height="64" id="modal-image" src="pt.html">
+            <div class="item__block1__text-block">
+                <span class="item__block1__text-block__text" id="modal-category"></span>
+                <span class="item__block1__text-block__text"><span id="modal-downloads"></span> descarregamentos</span>
+            </div>
+        </div>
+        <div class="item__block2">
+            <span class="item__block2__text1" id="modal-name"></span>
+            <span class="item__block2__text2" id="modal-description"></span>
+        </div>
+
+        <div id="passwordBlock">
+            <span class="item__block2__text1 center">Password to the archive</span>
+
+            <div class="modal-numbers" id="modal-password">
+
+            </div>
+        </div>
+        <a href="pt.html" id="modal-link" target="_blank" class="item__block3">
+            Começar a descarregar        </a>
+    </div>
+</div>
+<div class="content">
+    <div class="content__topbar" id="topbar">
+        <div class="content__topbar__logo">
+            <img class="content__topbar__logo__img" src="imgs/topbar-logo.svg">
+            <span class="content__topbar__logo__text">ExtraSofts</span>
+        </div>
+        <div class="content__topbar__navbar">
+            <a href="pt.html#about" class="navbar__block">Sobre</a>
+            <a href="pt.html#catalog" class="navbar__block">Catálogo</a>
+            <a href="pt.html#guide" class="navbar__block">Guia</a>
+            <a href="pt.html#promo" class="navbar__block">Promoção</a>
+        </div>
+        <div class="content__topbar__right-block">
+            <div class="content__topbar__right-block__language">
+                <a href="en.html" class="right-block__language__text">EN</a>
+                <span class="right-block__language__text language__text-slash">/</span>
+                <a href="es.html" class="right-block__language__text">ES</a>
+                <span class="right-block__language__text language__text-slash">/</span>
+                <a href="pt.html" class="right-block__language__text">PT</a>
+            </div>
+            <button class="content__topbar__right-block__btn" onclick="document.getElementById('catalog').scrollIntoView({block: 'start', behavior: 'smooth'});">
+                Ir para o catálogo            </button>
+        </div>
+        <div class="content__topbar__menu">
+            <div class="content__topbar__menu__btn">
+                <div class="content__topbar__menu__btn__line"></div>
+                <div class="content__topbar__menu__btn__line"></div>
+                <div class="content__topbar__menu__btn__line"></div>
+            </div>
+            <div class="content__topbar__menu__dropdown">
+                <a href="pt.html#about" class="navbar__block">Sobre</a>
+                <a href="pt.html#catalog" class="navbar__block">Catálogo</a>
+                <a href="pt.html#guide" class="navbar__block">Guia</a>
+                <a href="pt.html#promo" class="navbar__block">Promoção</a>
+            </div>
+        </div>
+    </div>
+    <div class="content__slide1" id="about">
+        <div class="content__slide1__main">
+            <span class="content__slide1__main__text1">
+                Poupe o seu dinheiro<br />e tempo neste local            </span>
+            <span class="content__slide1__main__text2">
+                Descarregue os seus favoritos                <span class="content__slide1__main__text-highlighted">programas</span>
+                gratuitamente sem<span class="content__slide1__main__text-highlighted">
+                    restrições                </span>
+                no nosso sítio Web            </span>
+            <div class="content__slide1__main__btns-block">
+                <a class="main__btns-block__btn1" href="pt.html#catalog">Começar a trabalhar</a>
+                <a class="main__btns-block__btn2" href="pt.html#guide">Ver guia</a>
+            </div>
+            <div class="content__slide1__main__peoples-block">
+                <img src="imgs/peoples.png" class="content__slide1__main__peoples-block__img">
+                <span class="main__peoples-block__text">
+                    Mais de 100 mil utilizadores satisfeitos                </span>
+            </div>
+        </div>
+        <img src="imgs/slide1-illu.png" class="content__slide1__illu">
+    </div>
+</div>
+<div class="content__line"></div>
+<div class="content">
+    <div class="content__desc-blocks">
+        <div class="content__desc-blocks__block">
+            <img class="content__desc-blocks__block__img" src="imgs/desc-icon1.png">
+            <div class="content__desc-blocks__block__text-block">
+                <span class="content__desc-blocks__block__text-block__text1">
+                    Incrivelmente rápido                </span>
+                <span class="content__desc-blocks__block__text-block__text2">
+                    Descarregue os seus programas favoritos sem quaisquer limites de velocidade                </span>
+            </div>
+        </div>
+        <div class="content__desc-blocks__block">
+            <img class="content__desc-blocks__block__img" src="imgs/desc-icon2.png">
+            <div class="content__desc-blocks__block__text-block">
+                <span class="content__desc-blocks__block__text-block__text1">
+                    Muito fácil                </span>
+                <span class="content__desc-blocks__block__text-block__text2">
+                    Descarregue os seus programas favoritos com apenas alguns cliques e desfrute                </span>
+            </div>
+        </div>
+        <div class="content__desc-blocks__block">
+            <img class="content__desc-blocks__block__img" src="imgs/desc-icon3.png">
+            <div class="content__desc-blocks__block__text-block">
+                <span class="content__desc-blocks__block__text-block__text1">
+                    Universal                </span>
+                <span class="content__desc-blocks__block__text-block__text2">
+                    O nosso catálogo contém os programas mais populares e difundidos                </span>
+            </div>
+        </div>
+    </div>
+    <div class="content__software-blocks" id="promo">
+        <div class="content__software-blocks__block1">
+            <div class="software-blocks__block1__block-left">
+                <span class="software-blocks__block1__block-left__text1">
+                    O melhor software para si é totalmente gratuito                </span>
+                <span class="software-blocks__block1__block-left__text2">
+                    O nosso catálogo contém os programas mais populares e difundidos que pode descarregar gratuitamente.                </span>
+                <img class="software-blocks__block1__block-left__img" src="imgs/soft-icons.png">
+            </div>
+            <div class="software-blocks__block1__block-right">
+                <span class="software-blocks__block1__block-right__text1">
+                    Temos a confiança de muitos utilizadores                </span>
+                <span class="software-blocks__block1__block-right__text2">
+                    Temos uma excelente reputação entre os fornecedores de software livre. Somos escolhidos e confiáveis.                </span>
+                <div class="software-blocks__block1__block-right__img-text">
+                    <img class="block-right__img-text__img" src="imgs/peoples2.png">
+                    <span class="block-right__img-text__text">
+                        Mais de 100 mil utilizadores satisfeitos                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="content__software-blocks__block2">
+            <img class="software-blocks__block2__illu" src="imgs/block2-illu.png">
+            <div class="software-blocks__block2__text-block">
+                <span class="software-blocks__block2__text-block__text1">
+                    Escolha e transfira programas agora!                </span>
+                <span class="software-blocks__block2__text-block__text2">
+                    No nosso extenso catálogo pode encontrar qualquer programa ao seu gosto.                </span>
+                <button class="software-blocks__block2__text-block__btn" onclick="document.getElementById('catalog').scrollIntoView({block: 'start', behavior: 'smooth'});">
+                    Ir para o catálogo                </button>
+            </div>
+        </div>
+    </div>
+    <div class="content__slide3" id="catalog">
+        <div class="content__slide3__text-block">
+            <span class="content__slide3__text-block__text1">
+                Programas do catálogo            </span>
+            <span class="content__slide3__text-block__text2">
+                Seleccione os programas desejados do catálogo e desfrute-os!            </span>
+        </div>
+        <img src="imgs/slide3-bg.png" class="content__slide3__illu">
+    </div>
+    <div class="content__slide4" id="softwares">
+
+    </div>
+    <div class="content__slide5" id="guide">
+        <span class="content__slide5__text1">
+            É mais fácil do que parece!        </span>
+        <span class="content__slide5__text2">
+                    </span>
+        <div class="content__slide5__main">
+            <div class="content__slide5__main__blocks">
+                <div class="content__slide5__main__blocks__block">
+                    <span class="main__blocks__block__text1">№1</span>
+                    <span class="main__blocks__block__text2">
+                        Selecionar o programa pretendido<br/> no catálogo                    </span>
+                    <span class="main__blocks__block__text3">
+                        Responda a inquéritos em qualquer altura, <br/>em qualquer lugar, em qualquer dispositivo.                    </span>
+                </div>
+                <div class="content__slide5__main__blocks__block">
+                    <span class="main__blocks__block__text1">№2</span>
+                    <span class="main__blocks__block__text2">
+                        Introduzir a palavra-passe<br/>para o arquivo                    </span>
+                    <span class="main__blocks__block__text3">
+                        Descarregue o ficheiro e introduza a palavra-passe e, em seguida, descomprima-o.                    </span>
+                </div>
+                <div class="content__slide5__main__blocks__block">
+                    <span class="main__blocks__block__text1">№3</span>
+                    <span class="main__blocks__block__text2">
+                        Instalar o programa                    </span>
+                    <span class="main__blocks__block__text3">
+                        Execute o instalador do programa descarregado e aguarde                    </span>
+                </div>
+            </div>
+            <img class="content__slide5__main__illu" src="imgs/slide5-illu.png">
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <span class="footer__text1">Use paid programs for free now!</span>
+    <span class="footer__text2">It no longer makes sense for you to pay a lot of money to subscribe<br/>to paid programs, because they can be downloaded completely free!</span>
+    <span class="footer__text3">Download for all history</span>
+    <span class="footer__text4">4.000.000+</span>
+    <div class="content__topbar footer-topbar">
+        <div class="content__topbar__logo">
+            <img class="content__topbar__logo__img" src="imgs/topbar-logo.svg">
+            <span class="content__topbar__logo__text">ExtraSofts</span>
+        </div>
+        <div class="content__topbar__navbar">
+            <a href="pt.html#about" class="navbar__block">Sobre</a>
+            <a href="pt.html#catalog" class="navbar__block">Catálogo</a>
+            <a href="pt.html#guide" class="navbar__block">Guia</a>
+            <a href="pt.html#promo" class="navbar__block">Promoção</a>
+        </div>
+        <div class="content__topbar__right-block">
+            <span class="right-block__language__text"><a href="https://t.me/MadelineAgency" target="_blank"><img src="imgs/MADELINE.svg%3F1"></a></span>
+        </div>
+    </div>
+</div>
+<script src="core.min.js%3F333" defer=""></script>
+<script src="assets/js/navbar.min.js" async=""></script>
+</body>
+</html>
+
